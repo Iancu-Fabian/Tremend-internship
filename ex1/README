@@ -1,0 +1,39 @@
+Pulled ubuntu image and ran the container locally
+	- docker run -it ubuntu
+
+Ran apt update to update the package repo
+	- apt update
+
+Installed dnsutils to be able to use dig
+	- apt install dnsutils
+
+Used +short to only get the ip address
+	- dig +short cloudflare.com
+ 
+output: 104.16.132.229
+        104.16.133.229 
+ 
+Installed vim as a text editor
+	 - apt install vim
+
+Added "8.8.8.8 google-dns" to the hosts file to map ip to dns locally (it bypasses further dns lookup and maps the hostname directly to the ip)
+  - vim /etc/hosts
+  
+Installed netcat to check google-dns for open DNS port 
+ 	- apt install netcat-openbsd
+	- nc -zv google-dns 53
+
+
+Edited the resolv.conf file
+	- vim /etc/resolv.conf
+	- changed nameserver to 8.8.8.8
+Ran dig again 
+
+
+- apt install nginx
+- service nginx start
+- service nginx status: * nginx is running
+- netstat -tuapen | grep nginx
+
+bonus
+* vim /etc/nginx/sites-enabled/default - change 

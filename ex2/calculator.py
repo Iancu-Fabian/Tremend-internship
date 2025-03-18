@@ -6,7 +6,7 @@ HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator API</title>
+    <title>Calculator API tremend</title>
     <style>
         body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
         .result { margin: 20px 0; padding: 10px; background: #f0f0f0; }

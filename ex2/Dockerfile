@@ -10,7 +10,4 @@ COPY calculator.py .
 
 EXPOSE 8080
 
-ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_RUN_PORT=8080
-
 CMD ["python", "calculator.py"]

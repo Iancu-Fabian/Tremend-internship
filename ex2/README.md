@@ -1,11 +1,16 @@
 Installed git:
+
 	- apt install git
 Cloned the repo:
+
 	- git clone https://github.com/anddragn/Internship-Resources-2025.git
 Created dockerfile
 
-Tried to run - docker build -t calculator-app . and
- docker run -p 8080:8080 calculator-app to map 8080 on my machine to 8080 on the container
+Tried to run
+
+	- docker build -t calculator-app .
+  	- docker run -p 8080:8080 calculator-app 
+ to map 8080 on my machine to 8080 on the container
 
 Got an error because Flask wasn't in requirements.txt
 Added Flask, tried again, running the container succeded

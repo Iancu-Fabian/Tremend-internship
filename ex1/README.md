@@ -23,6 +23,8 @@ Installed netcat to check google-dns for open DNS port
  	- apt install netcat-openbsd
 	- nc -zv google-dns 53 : -z means we use the command just to scan ports and -v stands for verbose
 
+![Alt text](https://github.com/Iancu-Fabian/Tremend-internship/blob/bd0e28169432652f3aa7e700390e0149a413876f/screenshots/Screenshot%202025-03-19%20at%2011.20.33.png)
+
 
 Edited the resolv.conf file
 	- vim /etc/resolv.conf
@@ -43,6 +45,9 @@ Went to one of the configuration files specified in nginx.conf (could have also 
 	- vim /etc/nginx/sites-enabled/default
 
 ![Alt text](https://github.com/Iancu-Fabian/Tremend-internship/blob/0fd6860e15a174934e1afc1428d4082b3d3629b1/screenshots/Screenshot%202025-03-18%20at%2019.27.58.jpg)
+
 Went to /var/www/html, where the nginx index.html file is located and changed the title
 	- vim /var/www/html/index.nginx-debian.html 
+
+ ![Alt text](https://github.com/Iancu-Fabian/Tremend-internship/blob/bd0e28169432652f3aa7e700390e0149a413876f/screenshots/Screenshot%202025-03-18%20at%2019.30.30.png)
 

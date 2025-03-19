@@ -21,19 +21,28 @@ Added "8.8.8.8 google-dns" to the hosts file to map ip to dns locally (it bypass
   
 Installed netcat to check google-dns for open DNS port 
  	- apt install netcat-openbsd
-	- nc -zv google-dns 53
+	- nc -zv google-dns 53 : -z means we use the command just to scan ports and -v stands for verbose
+
 
 
 Edited the resolv.conf file
 	- vim /etc/resolv.conf
 	- changed nameserver to 8.8.8.8
-Ran dig again 
+Ran dig cloudflare.com again and got the same result (not sure if I should've got something different)
 
+Installed nginx and started the service
+	- apt install nginx
+	- service nginx start
+	- service nginx status
+	output: * nginx is running
+Checked the nginx port by using the -tuapen options when running netstat. T and u stand for tcp and udp, a displays all active connections, p displays the pid, e shows extra information (such as the user) and n shows the ip adresses in numeric format.
+	- netstat -tuapen | grep nginx
 
-- apt install nginx
-- service nginx start
-- service nginx status: * nginx is running
-- netstat -tuapen | grep nginx
+bonus:
 
-bonus
-* vim /etc/nginx/sites-enabled/default - change 
+Went to one of the configuration files specified in nginx.conf (could have also went to sites-available/default) and changed the port nginx is listening on
+	- vim /etc/nginx/sites-enabled/default
+
+Went to /var/www/html, where the nginx index.html file is located and changed the title
+	- vim /var/www/html/index.nginx-debian.html 
+

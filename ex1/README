@@ -23,7 +23,9 @@ Installed netcat to check google-dns for open DNS port
  	- apt install netcat-openbsd
 	- nc -zv google-dns 53 : -z means we use the command just to scan ports and -v stands for verbose
 
-
+<img width="448" alt="Image" src="https://github.com/user-attachments/assets/82dba89a-b133-4dce-8ef4-dd544412b0cd" />
+<img width="462" alt="Image" src="https://github.com/user-attachments/assets/afb5951b-676a-4b20-ab6d-aba551f02fca" />
+<img width="480" alt="Image" src="https://github.com/user-attachments/assets/295e911f-f873-421e-b532-19e03fe53f5c" />
 
 Edited the resolv.conf file
 	- vim /etc/resolv.conf

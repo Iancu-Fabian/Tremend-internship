@@ -68,3 +68,6 @@ Went to /var/www/html, where the nginx index.html file is located and changed th
 
  ![Alt text](https://github.com/Iancu-Fabian/Tremend-internship/blob/bd0e28169432652f3aa7e700390e0149a413876f/screenshots/Screenshot%202025-03-18%20at%2019.30.30.png)
 
+
+script.sh executes all the commands described in this README
+
